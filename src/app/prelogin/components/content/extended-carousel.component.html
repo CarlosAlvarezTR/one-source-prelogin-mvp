@@ -34,6 +34,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   appearance="cta-primary"
+                  [attr.tabindex]="isSlide1Active ? null : '-1'"
                   [attr.aria-label]="
                     ('extendedCarousel.slide1.buttonText' | translate) +
                     ', ' +
@@ -82,6 +83,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   appearance="cta-primary"
+                  [attr.tabindex]="isSlide2Active ? null : '-1'"
                   [attr.aria-label]="
                     ('extendedCarousel.slide2.buttonText' | translate) +
                     ', ' +
@@ -130,6 +132,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   appearance="cta-primary"
+                  [attr.tabindex]="isSlide3Active ? null : '-1'"
                   [attr.aria-label]="
                     ('extendedCarousel.slide3.buttonText' | translate) +
                     ', ' +
@@ -155,6 +158,7 @@
                 rel="noopener noreferrer"
                 appearance="cta-secondary"
                 class="product-link"
+                [attr.tabindex]="isSlide3Active ? null : '-1'"
                 [attr.aria-label]="
                   ('extendedCarousel.slide3.products.indirectTax' | translate) +
                   ', ' +
@@ -182,6 +186,7 @@
                 rel="noopener noreferrer"
                 appearance="cta-secondary"
                 class="product-link"
+                [attr.tabindex]="isSlide3Active ? null : '-1'"
                 [attr.aria-label]="
                   ('extendedCarousel.slide3.products.directTax' | translate) +
                   ', ' +
@@ -209,6 +214,7 @@
                 rel="noopener noreferrer"
                 appearance="cta-secondary"
                 class="product-link"
+                [attr.tabindex]="isSlide3Active ? null : '-1'"
                 [attr.aria-label]="
                   ('extendedCarousel.slide3.products.globalTradeManagement'
                     | translate) +
@@ -240,6 +246,7 @@
                 rel="noopener noreferrer"
                 appearance="cta-secondary"
                 class="product-link"
+                [attr.tabindex]="isSlide3Active ? null : '-1'"
                 [attr.aria-label]="
                   ('extendedCarousel.slide3.products.statutoryReporting'
                     | translate) +
@@ -271,6 +278,7 @@
                 rel="noopener noreferrer"
                 appearance="cta-secondary"
                 class="product-link"
+                [attr.tabindex]="isSlide3Active ? null : '-1'"
                 [attr.aria-label]="
                   ('extendedCarousel.slide3.products.informationReporting'
                     | translate) +
@@ -302,6 +310,7 @@
                 rel="noopener noreferrer"
                 appearance="cta-secondary"
                 class="product-link"
+                [attr.tabindex]="isSlide3Active ? null : '-1'"
                 [attr.aria-label]="
                   ('extendedCarousel.slide3.products.trustTax' | translate) +
                   ', ' +
@@ -329,6 +338,7 @@
                 rel="noopener noreferrer"
                 appearance="cta-secondary"
                 class="product-link"
+                [attr.tabindex]="isSlide3Active ? null : '-1'"
                 [attr.aria-label]="
                   ('extendedCarousel.slide3.products.taxDataManagement'
                     | translate) +
@@ -360,6 +370,7 @@
                 rel="noopener noreferrer"
                 appearance="cta-secondary"
                 class="product-link"
+                [attr.tabindex]="isSlide3Active ? null : '-1'"
                 [attr.aria-label]="
                   ('extendedCarousel.slide3.products.aiAssistedResearch'
                     | translate) +
@@ -391,6 +402,7 @@
                 rel="noopener noreferrer"
                 appearance="cta-secondary"
                 class="product-link"
+                [attr.tabindex]="isSlide3Active ? null : '-1'"
                 [attr.aria-label]="
                   ('extendedCarousel.slide3.products.partnershipsAlliances'
                     | translate) +

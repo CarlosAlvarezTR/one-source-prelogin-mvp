@@ -15,6 +15,14 @@ export class ExtendedCarouselComponent {
   currentSlide = 0;
   totalSlides = 3;
 
+  get isSlide1Active(): boolean {
+    return this.currentSlide === 0; // Slide 1 (index 0)
+  }
+
+  get isSlide2Active(): boolean {
+    return this.currentSlide === 1; // Slide 2 (index 1)
+  }
+
   get isSlide3Active(): boolean {
     return this.currentSlide === 2; // Slide 3 (index 2)
   }
