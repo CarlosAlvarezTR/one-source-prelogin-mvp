@@ -79,10 +79,13 @@
           </saf-anchor>
           <saf-metadata class="article-metadata">
             <saf-metadata-item>{{
-              ("news.metadata.published" | translate) + " " + article.date
-            }}</saf-metadata-item>
-            <saf-metadata-item>{{
-              article.readTime + " " + ("news.metadata.readTime" | translate)
+              ("news.metadata.published" | translate) +
+                " " +
+                article.date +
+                " - " +
+                article.readTime +
+                " " +
+                ("news.metadata.readTime" | translate)
             }}</saf-metadata-item>
           </saf-metadata>
         </div>
@@ -96,7 +99,7 @@
     </div>
     <div class="read-more">
       <saf-anchor
-        href="#"
+        href="https://tax.thomsonreuters.com/news/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Read more news, opens in a new tab"

@@ -37,6 +37,11 @@
   text-underline-position: from-font;
   gap: var(--saf-spacing-1) !important;
 
+  // Remove any additional underlines from the component
+  .control {
+    text-decoration: none !important;
+  }
+
   saf-icon {
     color: var(--saf-color-white) !important;
     padding-left: var(--saf-spacing-1) !important;

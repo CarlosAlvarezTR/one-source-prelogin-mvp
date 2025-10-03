@@ -28,22 +28,22 @@ export class QuickLinksNewsComponent {
   quickLinks: QuickLink[] = [
     {
       key: 'quickLinks.links.getHelp',
-      url: 'https://support.thomsonreuters.com/onesource',
+      url: 'https://www.thomsonreuters.com/en-us/help',
       external: true,
     },
     {
       key: 'quickLinks.links.contactOnesource',
-      url: 'https://contact.thomsonreuters.com/onesource',
+      url: 'https://tax.thomsonreuters.com/en/onesource/contact',
       external: true,
     },
     {
       key: 'quickLinks.links.signInCase',
-      url: 'https://cases.thomsonreuters.com/dashboard',
+      url: 'https://signon.thomsonreuters.com/v2?productid=MKTTAX',
       external: true,
     },
     {
       key: 'quickLinks.links.checkStatus',
-      url: 'https://status.thomsonreuters.com/onesource',
+      url: 'https://corporates-status.thomsonreuters.com/',
       external: true,
     },
   ];
@@ -51,23 +51,23 @@ export class QuickLinksNewsComponent {
   newsArticles: NewsArticle[] = [
     {
       titleKey: 'news.articles.payrollCompliance',
-      url: 'https://example.com/payroll-org-compliance-chief-reacts-irs-draft-2026-forms-obbba',
+      url: 'https://tax.thomsonreuters.com/news/payrollorg-compliance-chief-reacts-to-irs-draft-2026-forms-under-obbba/',
       date: 'September 12, 2025',
-      readTime: '5',
+      readTime: '5 minute',
       external: true,
     },
     {
       titleKey: 'news.articles.key2026Figures',
-      url: 'https://example.com/key-2026-figures-calculated-thomson-reuters-checkpoint-inflation-data',
+      url: 'https://tax.thomsonreuters.com/news/key-2026-figures-calculated-by-thomson-reuters-checkpoint-based-on-inflation-data-now-available/',
       date: 'September 11, 2025',
-      readTime: '6',
+      readTime: '6 minute',
       external: true,
     },
     {
       titleKey: 'news.articles.senatorsGrill',
-      url: 'https://example.com/senators-grill-irs-chief-counsel-nominee',
+      url: 'https://tax.thomsonreuters.com/news/senators-grill-irs-chief-counsel-nominee/',
       date: 'September 11, 2025',
-      readTime: '5',
+      readTime: '5 minute',
       external: true,
     },
   ];

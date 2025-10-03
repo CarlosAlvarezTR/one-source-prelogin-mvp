@@ -1,4 +1,9 @@
-<div class="breaking-news-banner" role="status" data-node-id="16861:6001">
+<div
+  *ngIf="showBanner"
+  class="breaking-news-banner"
+  role="status"
+  data-node-id="16861:6001"
+>
   <div class="breaking-news-content" data-node-id="16861:6002">
     <p class="breaking-news-text">
       <span>{{ "breaking.news" | translate }} </span>

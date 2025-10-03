@@ -16,7 +16,7 @@
       "forgot": "Forgot email or password?",
       "showPassword": "Show password",
       "hidePassword": "Hide password",
-      "button": "Sign In",
+      "button": "Sign in",
       "thomson_reuters_message": "Already upgraded to a Thomson Reuters account? Sign in using just your email.",
       "thomson_reuters_button": "Thomson Reuters sign-in"
     },
@@ -40,7 +40,7 @@
       "copyright": "© 2025 Thomson Reuters. All rights reserved."
     },
     "quickLinks": {
-      "title": "Quick Links",
+      "title": "Quick links",
       "links": {
         "getHelp": "Get help and support",
         "contactOnesource": "Contact ONESOURCE",
@@ -56,7 +56,7 @@
         "senatorsGrill": "Senators grill IRS chief counsel nominee"
       },
       "metadata": {
-        "readTime": "min read",
+        "readTime": "read",
         "published": "Published"
       },
       "readMore": "Read more news"
