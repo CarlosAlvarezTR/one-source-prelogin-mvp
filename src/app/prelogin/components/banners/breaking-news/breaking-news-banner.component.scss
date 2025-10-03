@@ -32,9 +32,6 @@
 
 :host ::ng-deep .breaking-news-link {
   color: var(--saf-color-white);
-  text-decoration: underline !important;
-  text-decoration-skip-ink: none;
-  text-underline-position: from-font;
   gap: var(--saf-spacing-1) !important;
 
   // Remove any additional underlines from the component
