@@ -59,14 +59,30 @@
   }
 }
 
-// Responsive design
+// Responsive design - Specific breakpoints for optimal display
+// 1280px (2xl breakpoint): Medium-sized screens
+@media (max-width: 1280px) {
+  .prelogin-shell {
+    .welcome-section {
+      .welcome-container {
+        .welcome-layout {
+          grid-template-columns: 1fr 1fr;
+          gap: var(--saf-spacing-5);
+          padding: 0 var(--saf-spacing-5);
+        }
+      }
+    }
+  }
+}
+
+// 992px: Standard tablet breakpoint
 @media (max-width: 992px) {
   .prelogin-shell {
     .welcome-section {
       .welcome-container {
         .welcome-layout {
           grid-template-columns: 1fr;
-          gap: var(--saf-spacing-xl);
+          gap: var(--saf-spacing-6);
 
           .login-card-container {
             order: 1;
@@ -100,14 +116,25 @@
   }
 }
 
-// Responsive design with progressive adaptation
-@media (max-width: 1200px) {
+// Content section responsive adjustments
+@media (max-width: 1280px) {
   .content-section {
     .content-container {
       padding: 0 var(--saf-spacing-5);
 
       .content-layout {
+        grid-template-columns: 1fr 1fr;
         gap: var(--saf-spacing-5);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-section {
+    .content-container {
+      .content-layout {
+        gap: var(--saf-spacing-4);
       }
     }
   }
@@ -134,10 +161,14 @@
   }
 
   .content-section {
+    padding: var(--saf-spacing-7) 0;
+
     .content-container {
+      padding: 0 var(--saf-spacing-4);
+
       .content-layout {
         grid-template-columns: 1fr;
-        gap: var(--saf-spacing-xl);
+        gap: var(--saf-spacing-5);
       }
     }
   }
@@ -150,36 +181,66 @@
   padding: 0;
 }
 
+// 768px: Standard mobile breakpoint
 @media (max-width: 768px) {
   .prelogin-shell {
     .welcome-section {
-      padding: var(--saf-spacing-xl) 0;
+      padding: var(--saf-spacing-7) 0;
 
       .welcome-container {
-        padding: 0 var(--saf-spacing-m);
+        padding: 0 var(--saf-spacing-4);
 
         .welcome-title {
           font-size: var(--saf-typography-heading-l-font-size);
-          margin-bottom: var(--saf-spacing-xl);
+          margin-bottom: var(--saf-spacing-5);
         }
 
         .welcome-layout {
-          gap: var(--saf-spacing-l);
+          gap: var(--saf-spacing-5);
         }
       }
     }
 
     .content-section {
+      padding: var(--saf-spacing-7) 0;
+
       .content-container {
-        padding: 0 var(--saf-spacing-m);
+        padding: 0 var(--saf-spacing-4);
 
         .content-layout {
           grid-template-columns: 1fr;
-          gap: var(--saf-spacing-l);
+          gap: var(--saf-spacing-5);
         }
       }
     }
   }
+}
 
-  // Extended carousel section: No additional mobile-specific styles needed, handled by component
+// 320px (xs breakpoint): Small mobile devices and high zoom
+@media (max-width: 320px) {
+  .prelogin-shell {
+    .welcome-section {
+      padding: var(--saf-spacing-5) 0;
+
+      .welcome-container {
+        padding: 0 var(--saf-spacing-3);
+
+        .welcome-layout {
+          gap: var(--saf-spacing-4);
+        }
+      }
+    }
+
+    .content-section {
+      padding: var(--saf-spacing-5) 0;
+
+      .content-container {
+        padding: 0 var(--saf-spacing-3);
+
+        .content-layout {
+          gap: var(--saf-spacing-4);
+        }
+      }
+    }
+  }
 }

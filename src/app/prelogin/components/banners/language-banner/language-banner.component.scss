@@ -115,24 +115,68 @@
 }
 
 // Responsive design
-@media (max-width: 768px) {
+// 1280px (2xl breakpoint): Medium-sized screens
+@media (max-width: 1280px) {
   .language-banner {
-    padding: var(--saf-spacing-3) var(--saf-spacing-4); // Reduced padding on mobile
+    padding: var(--saf-spacing-4) var(--saf-spacing-6);
 
     .language-content {
-      padding-right: 0; // Remove extra padding on mobile
+      .language-selector {
+        min-width: 280px;
+        max-width: 350px;
+      }
+    }
+  }
+}
+
+// 768px: Standard mobile breakpoint
+@media (max-width: 768px) {
+  .language-banner {
+    padding: var(--saf-spacing-3) var(--saf-spacing-4);
+
+    .language-content {
+      padding-right: 0;
 
       .language-selector {
         width: 100%;
         min-width: unset;
         max-width: unset;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: var(--saf-spacing-1);
+        flex-direction: row;
+        align-items: center;
+        gap: var(--saf-spacing-2);
 
         .language-label {
           .label-text {
-            font-size: var(--saf-font-size-sm); // Smaller font on mobile
+            font-size: var(--saf-font-size-sm);
+          }
+        }
+
+        .language-combobox {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+// 320px (xs breakpoint): Small mobile devices and high zoom
+@media (max-width: 320px) {
+  .language-banner {
+    padding: var(--saf-spacing-2) var(--saf-spacing-3);
+
+    .language-content {
+      min-height: 36px;
+
+      .language-selector {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--saf-spacing-1);
+        min-width: unset;
+
+        .language-label {
+          .label-text {
+            font-size: var(--saf-font-size-sm);
+            padding: 0;
           }
         }
 
@@ -142,10 +186,17 @@
       }
     }
   }
-}
 
-@media (max-width: 480px) {
-  .language-banner {
-    padding: var(--saf-spacing-2) var(--saf-spacing-3); // Even smaller padding on very small screens
+  // Adjust combobox size for very small screens
+  :host ::ng-deep {
+    .language-combobox {
+      saf-combobox {
+        .saf-field__input {
+          font-size: 14px !important;
+          height: 28px !important;
+          padding: 2px 28px 2px 8px !important;
+        }
+      }
+    }
   }
 }

@@ -149,3 +149,94 @@
     }
   }
 }
+
+// Responsive design for carousel
+// 1280px (2xl breakpoint): Medium-sized screens
+@media (max-width: 1280px) {
+  .carousel-viewport {
+    height: 550px;
+  }
+
+  .carousel-card {
+    min-height: 500px;
+
+    img {
+      height: 280px;
+    }
+  }
+}
+
+// 768px: Standard mobile breakpoint
+@media (max-width: 768px) {
+  .carousel-viewport {
+    height: 500px;
+  }
+
+  .carousel-card {
+    min-height: 450px;
+
+    img {
+      height: 250px;
+    }
+
+    .card-description {
+      font-size: var(--saf-font-size-sm);
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+    }
+  }
+
+  .carousel-controls {
+    gap: var(--saf-spacing-1);
+
+    .slide-indicator {
+      padding: var(--saf-spacing-1);
+    }
+  }
+}
+
+// 320px (xs breakpoint): Small mobile devices and high zoom
+@media (max-width: 320px) {
+  :host {
+    max-width: 100%;
+  }
+
+  .carousel {
+    gap: var(--saf-spacing-1);
+  }
+
+  .carousel-viewport {
+    height: 420px;
+  }
+
+  .carousel-card {
+    min-height: 380px;
+
+    img {
+      height: 200px;
+    }
+
+    .card-description {
+      font-size: var(--saf-font-size-sm);
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      line-height: 1.4;
+    }
+  }
+
+  .carousel-controls {
+    gap: var(--saf-spacing-1);
+
+    .slide-indicator {
+      padding: var(--saf-spacing-1);
+
+      ::ng-deep saf-text {
+        font-size: var(--saf-font-size-sm);
+      }
+    }
+  }
+
+  .explore-link {
+    font-size: var(--saf-font-size-sm);
+  }
+}

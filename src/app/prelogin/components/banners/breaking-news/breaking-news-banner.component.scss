@@ -60,21 +60,51 @@
   color: var(--saf-color-white) !important;
 }
 
+// Responsive design for breaking news banner
+// 1280px (2xl breakpoint): Medium-sized screens
+@media (max-width: 1280px) {
+  .breaking-news-banner {
+    padding: var(--saf-spacing-3) var(--saf-spacing-6);
+  }
+}
+
+// 768px: Standard mobile breakpoint
 @media (max-width: 768px) {
   .breaking-news-banner {
-    padding: var(--saf-spacing-3) var(--saf-spacing-4); // Consistent token usage
+    padding: var(--saf-spacing-3) var(--saf-spacing-4);
 
     .breaking-news-content {
       .breaking-news-text {
         white-space: normal;
         text-align: center;
+        font-size: var(--saf-font-size-sm);
       }
     }
   }
 }
 
-@media (max-width: 480px) {
+// 320px (xs breakpoint): Small mobile devices and high zoom
+@media (max-width: 320px) {
   .breaking-news-banner {
-    padding: var(--saf-spacing-2) var(--saf-spacing-3); // Even smaller padding on mobile
+    padding: var(--saf-spacing-2) var(--saf-spacing-3);
+    gap: var(--saf-spacing-0);
+
+    .breaking-news-content {
+      .breaking-news-text {
+        font-size: var(--saf-font-size-sm);
+        line-height: 1.4;
+        text-align: center;
+      }
+    }
+  }
+
+  // Adjust link styles for very small screens
+  :host ::ng-deep .breaking-news-link {
+    gap: 2px !important;
+
+    saf-icon {
+      padding-left: 2px !important;
+      font-size: var(--saf-font-size-sm) !important;
+    }
   }
 }

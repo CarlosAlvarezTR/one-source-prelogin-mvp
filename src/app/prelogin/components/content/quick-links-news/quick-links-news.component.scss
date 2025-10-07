@@ -167,3 +167,119 @@ saf-card.news-card {
     }
   }
 }
+
+// Responsive design for quick-links-news
+// 1280px (2xl breakpoint): Medium-sized screens
+@media (max-width: 1280px) {
+  saf-card.quick-links-card,
+  saf-card.news-card {
+    max-width: 100%;
+  }
+
+  saf-card.quick-links-card {
+    img {
+      height: 220px;
+    }
+  }
+}
+
+// 768px: Standard mobile breakpoint
+@media (max-width: 768px) {
+  saf-card.quick-links-card {
+    img {
+      height: 200px;
+    }
+
+    .card-content {
+      gap: var(--saf-spacing-1);
+    }
+
+    .links-list {
+      saf-list {
+        ::ng-deep saf-list-item {
+          margin-top: var(--saf-spacing-2);
+
+          &:first-child {
+            margin-top: var(--saf-spacing-3);
+          }
+        }
+      }
+    }
+  }
+
+  saf-card.news-card {
+    .news-stories {
+      gap: var(--saf-spacing-3);
+
+      .news-item {
+        .news-link {
+          font-size: var(--saf-font-size-sm);
+        }
+      }
+    }
+  }
+}
+
+// 320px (xs breakpoint): Small mobile devices and high zoom
+@media (max-width: 320px) {
+  saf-card.quick-links-card {
+    img {
+      height: 160px;
+    }
+
+    .links-list {
+      saf-list {
+        ::ng-deep saf-list-item {
+          margin-top: var(--saf-spacing-1);
+
+          &:first-child {
+            margin-top: var(--saf-spacing-2);
+          }
+        }
+
+        saf-list-item {
+          .quick-link {
+            font-size: var(--saf-font-size-sm);
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+
+  saf-card.news-card {
+    .heading-with-icon {
+      gap: var(--saf-spacing-2);
+
+      .icon-container {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    .news-stories {
+      gap: var(--saf-spacing-2);
+
+      .news-item {
+        .news-link {
+          font-size: var(--saf-font-size-sm);
+          line-height: 1.4;
+        }
+
+        .article-metadata {
+          saf-metadata-item {
+            font-size: var(--saf-font-size-xs);
+          }
+        }
+      }
+    }
+
+    .read-more {
+      margin-top: var(--saf-spacing-3);
+
+      .read-more-link {
+        font-size: var(--saf-font-size-sm);
+      }
+    }
+  }
+}

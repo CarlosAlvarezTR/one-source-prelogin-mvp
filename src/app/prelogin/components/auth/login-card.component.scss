@@ -196,3 +196,143 @@
   margin: auto;
   justify-content: center;
 }
+
+// Responsive design for login card
+// 1280px (2xl breakpoint): Medium-sized screens - optimize spacing
+@media (max-width: 1280px) {
+  .card-header {
+    gap: var(--saf-spacing-5);
+    padding: var(--saf-spacing-2) var(--saf-spacing-2) 0 var(--saf-spacing-2);
+
+    .header-content {
+      .text-container {
+        margin-bottom: var(--saf-spacing-5);
+      }
+    }
+  }
+
+  .card-footer {
+    .thomson-reuters-container {
+      padding: var(--saf-spacing-3) var(--saf-spacing-4);
+      margin-top: var(--saf-spacing-5);
+    }
+
+    .buttons {
+      margin-top: var(--saf-spacing-5);
+    }
+  }
+}
+
+// 768px: Standard mobile breakpoint
+@media (max-width: 768px) {
+  .card-header {
+    gap: var(--saf-spacing-4);
+
+    .tr-logo {
+      height: 26px;
+      width: auto;
+    }
+
+    .header-content {
+      .text-container {
+        margin-bottom: var(--saf-spacing-4);
+
+        .card-title {
+          font-size: var(--saf-font-size-2xl);
+        }
+      }
+    }
+  }
+
+  .login-form {
+    .input-container {
+      margin-bottom: var(--saf-spacing-3);
+    }
+
+    .forgot-password-container {
+      margin-top: var(--saf-spacing-3);
+      margin-bottom: var(--saf-spacing-4);
+    }
+  }
+
+  .card-footer {
+    .thomson-reuters-container {
+      padding: var(--saf-spacing-3);
+      margin-top: var(--saf-spacing-4);
+    }
+
+    .buttons {
+      margin-top: var(--saf-spacing-4);
+    }
+  }
+}
+
+// 320px (xs breakpoint): Small mobile devices and high zoom
+@media (max-width: 320px) {
+  :host {
+    max-width: 100%;
+  }
+
+  .login-card {
+    margin: 0;
+  }
+
+  .card-body {
+    padding: 0 var(--saf-spacing-1);
+  }
+
+  .card-header {
+    gap: var(--saf-spacing-3);
+    padding: var(--saf-spacing-2) var(--saf-spacing-1) 0 var(--saf-spacing-1);
+
+    .tr-logo {
+      height: 22px;
+      width: auto;
+    }
+
+    .header-content {
+      .text-container {
+        margin-bottom: var(--saf-spacing-3);
+
+        .card-title {
+          font-size: var(--saf-font-size-xl);
+          line-height: 1.3;
+        }
+
+        .required-field-note {
+          font-size: var(--saf-font-size-sm);
+        }
+      }
+    }
+  }
+
+  .login-form {
+    .input-container {
+      margin-bottom: var(--saf-spacing-2);
+    }
+
+    .forgot-password-container {
+      margin-top: var(--saf-spacing-2);
+      margin-bottom: var(--saf-spacing-3);
+    }
+  }
+
+  .card-footer {
+    padding: 0 var(--saf-spacing-1) var(--saf-spacing-2) var(--saf-spacing-1);
+
+    .thomson-reuters-container {
+      padding: var(--saf-spacing-2);
+      margin-top: var(--saf-spacing-3);
+      width: 96%;
+
+      .upgrade-message {
+        font-size: var(--saf-font-size-sm);
+        line-height: 1.4;
+      }
+    }
+
+    .buttons {
+      margin-top: var(--saf-spacing-3);
+    }
+  }
+}
