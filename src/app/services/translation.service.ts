@@ -39,6 +39,7 @@ export class TranslationService {
         'en-US': {
           'welcome.title': 'Welcome to ONESOURCE',
           'login.title': 'Sign in to ONESOURCE',
+          'login.username': 'Username',
           'login.email': 'Email',
           'login.password': 'Password',
           'login.forgot': 'Forgot email or password?',
@@ -53,6 +54,7 @@ export class TranslationService {
         'es-ES': {
           'welcome.title': 'Bienvenido a ONESOURCE',
           'login.title': 'Iniciar sesión en ONESOURCE',
+          'login.username': 'Nombre de usuario',
           'login.email': 'Correo electrónico',
           'login.password': 'Contraseña',
           'login.forgot': '¿Olvidaste el correo o la contraseña?',
